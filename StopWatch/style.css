@@ -1,0 +1,31 @@
+*{ box-sizing:border-box;}
+html, body{ margin: 0;background-color: black;}
+
+.container{
+  /* 영역의 할당영역  */
+  width: 80%; min -width: 320px; max-width: 640;
+  margin: 10px auto; padding: 5px 0 15px;
+  /* 10px 는 위아래 오토는 좌우 */
+  text-align: center; border: 1px solid white;
+  border-radius: 16px;
+}
+
+h2{ color: white;}
+h1{ color: red;}
+
+h1 > span {
+  display: inline-block;
+  width: 40px;
+
+}
+
+button{
+  color : darkblue; background-color: white;
+  font-size: 16px; padding: 10px;
+  width: 100px; border: none; border-radius: 20px;
+  margin: 10px; cursor: pointer;  
+}
+button:active{
+  color: white;
+  background-color: darkblue;
+}
