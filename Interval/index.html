@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>interval</title>
+  </head>
+  <body>
+    <h1 style = "font-size:xxx-large;">0</h1>
+    <script>
+      let seconds = 1;
+      let timerId;
+      timerId = setInterval(function(){
+        document.querySelector("h1").innerText = seconds++;
+        if(seconds > 5){
+          document.querySelector("h1").innerText ="h1{style = color:red}"
+          clearInterval(timerId)
+        }
+      },1000);
+    </script>
+  </body>
+</html>
+
+<!-- clearInterval은 파라미터를 받고 그 파라미터를 반환한 setInterval함수를 멈추게 한다 -->
