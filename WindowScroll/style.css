@@ -1,0 +1,27 @@
+*{box-sizing: border-box;}
+body{margin: 0;}
+.menu{
+  width:200px;height: 50px;
+  position: fixed; left: 45%;
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(0,0,0,0.5);
+  /*rgba()사용법 = rgba(R,G,B,투명도) */
+  display: flex;
+  justify-content: space-around;
+  /* justify-content 이게 뭔지 찾아보기 */
+  align-items: center;
+  color: white;
+}
+.menu > span:hover{
+  border-bottom: 3px solid white;
+  cursor:pointer;
+}
+.content{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div:nth-child(2){background-color: coral;}
+div:nth-child(3){background-color: gray;}
+div:nth-child(4){background-color: skyblue;}
