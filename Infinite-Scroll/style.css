@@ -1,0 +1,11 @@
+/* HTML 과 body의 margin의 default 값이 0 이 아니기 때문에 이것을 0으로 맞춰준다 */
+
+html , body {
+  margin : 0;
+}
+/* section은 무엇인가? */
+section .box{
+  height: 500px; background: skyblue; color: blue;
+  box-sizing: border-box; padding: 30px 10px;
+}
+section .box:nth-child(2n) { background: Hotpink;}
