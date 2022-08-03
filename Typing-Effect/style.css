@@ -1,0 +1,11 @@
+/* 커서가 깜빡거리는 효과를 추가해보자 */
+@keyframes cursor{
+    50%{ border-color: transparent; }
+  }
+
+
+.text{
+  display: table-cell; vertical-align: middle;
+  border-right: .05em solid black;
+  animation: cursor 0.3s ease infinite;
+}
