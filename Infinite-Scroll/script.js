@@ -7,6 +7,8 @@ window.onscroll =function(){
     var toAdd = document.createElement("div");
     toAdd.classList.add("box")
     toAdd.textContent = `${++count}번째 블록`
+
     document.querySelector('section').appendChild(toAdd);
   }
+  
 }
