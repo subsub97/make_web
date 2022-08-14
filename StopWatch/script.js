@@ -8,6 +8,7 @@ const appendSec = document.getElementById('sec');
 const buttonStart = document.getElementById('bt_start');
 const buttonStop = document.getElementById('bt_stop');
 const buttonReset = document.getElementById('bt_reset');
+const appendcomma = document.getElementById('comma2');
 let intervalId;
 
 
@@ -43,4 +44,16 @@ function operateTimer() {
     sec = 0;
     appendSec.textContent = "00"
   }
+  // 특정 시간부터 색상 바꾸기
+  if(5 < sec){
+    appendSec.style.color = 'gold'
+    appendTens.style.color ='gold'
+    comma2.style.color = 'gold'
+    if(9 < sec){
+      appendSec.style.color = 'red'
+      appendTens.style.color = 'red'
+      comma2.style.color = 'red'
+    }
+  }
+
 }
