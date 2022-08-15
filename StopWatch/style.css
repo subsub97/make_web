@@ -9,7 +9,8 @@ html, body{ margin: 0;background-color: black;}
   text-align: center; border: 1px solid white;
   border-radius: 16px;
 }
-
+h4{ color: white;}
+h3{color : white;}
 h2{ color: white;}
 h1{ color: red;}
 
@@ -28,4 +29,9 @@ button{
 button:active{
   color: white;
   background-color: darkblue;
+}
+
+section .r_all{
+  height: 5px;  color: red;
+  box-sizing: border-box; padding: 20px 20px 20px 20px;
 }

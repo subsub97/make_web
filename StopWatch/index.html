@@ -1,3 +1,5 @@
+ <!--****** 8-15일 시간 레코드 기능을 추가하려고 한다.****** -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,13 +13,40 @@
     <div class="container">
       <h2>StopWatch</h2>
       <h1>
-      <span id = "min">00</span><span id ="comma1">:</span> <span id ="sec">00</span> <span id ="comma2">:</span> <span id= "ten_Msec">00</span>
+
+        <span id = "min">00</span>
+        <span id ="comma1">:</span>
+        <span id ="sec">00</span>
+        <span id ="comma2">:</span>
+        <span id= "ten_Msec">00</span>
 
       </h1>
       <button id ="bt_start">START</button>
+      <button id ="bt_recode">RECODE</button>
       <button id ="bt_stop">STOP</button>
       <button id ="bt_reset">RESET</button>
     </div>
+    <div class="R_container">
+
+      <h3>
+        <span id ="r_cnt">_번째</span>
+        <span id ="r_min">00</span>
+        <span id ="r_comma1">:</span>
+        <span id ="r_sec">00</span>
+        <span id ="r_comma2">:</span>
+        <span id= "r_ten_Msec">00</span>
+      </h3>
+
+      <h2>ALL RECODE</h2>
+
+      <section>
+        <div class = 'r_all' id = 'r_all'></div>
+      </section>
+
+
+    </div>
+
+
 
   </body>
 <script src="script.js"></script>
