@@ -22,7 +22,6 @@ function paintNumber(number){
 }
 
 drawButton.addEventListener("click",function() {
-  alert("당신을 1등으로 만들어줄 로또 번호가 궁금합니까?")
   //숫자 6개를 만들어야한다.
   while(lottoNumbers.length < 6){
     //Math.random은 소수점을 가지고 나오기때문에 floor 을 이용해 내림한다.
