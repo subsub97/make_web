@@ -38,11 +38,16 @@ buttonStop.onclick = function () {
 
 buttonReset.onclick = function () {
   clearInterval(intervalId)
+  cnt = 0;
   ten_Msec = 0; sec = 0; min = 0;
   appendTens.textContent = "00"
   appendSec.textContent = "00"
   appendMin.textContent = "00"
   document.querySelector('section').classList.remove("r_all");
+  // document.querySelectorAll('section').remove(toAdd);
+  
+
+
 }
 
 
@@ -54,12 +59,14 @@ buttonRecode.onclick = function()
     r_appendSec.textContent = sec > 9 ? sec : '0' + sec
     r_appendTens.textContent = ten_Msec > 9 ? ten_Msec : '0' + ten_Msec
 
+
     // 모든 레코드를 출력하기위한 코드
 
     var toAdd = document.createElement("div");
     toAdd.classList.add("r_all")
     toAdd.textContent = r_cnt.textContent + ':' + r_appendMin.textContent + ':' + r_appendSec.textContent + ':' + r_appendTens.textContent
-    document.querySelector('section').appendChild(toAdd);
+    document.querySelector('section').append(toAdd);
+
     }
 
 
