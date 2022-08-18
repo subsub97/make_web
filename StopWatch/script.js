@@ -38,14 +38,23 @@ buttonStop.onclick = function () {
 
 buttonReset.onclick = function () {
   clearInterval(intervalId)
-  cnt = 0;
+
   ten_Msec = 0; sec = 0; min = 0;
   appendTens.textContent = "00"
   appendSec.textContent = "00"
   appendMin.textContent = "00"
-  document.querySelector('section').classList.remove("r_all");
-  // document.querySelectorAll('section').remove(toAdd);
-  
+
+  r_cnt.textContent = "-번"
+  r_appendMin.textContent = "00"
+  r_appendSec.textContent = "00"
+  r_appendTens.textContent = "00"
+
+  for(i = 0 ; i < cnt; i++){
+  document.querySelector('.r_all').remove();
+  }
+
+  cnt = 0;
+
 
 
 }
@@ -97,6 +106,12 @@ function operateTimer() {
     }
   }
 
+function reset_recodetime() {
+  r_cnt.textContent = `${++cnt} 번째 `
+  r_appendMin.textContent = min > 9 ? min : '0' + min
+  r_appendSec.textContent = sec > 9 ? sec : '0' + sec
+  r_appendTens.textContent = ten_Msec > 9 ? ten_Msec : '0' + ten_Msec
+}
 
 
 

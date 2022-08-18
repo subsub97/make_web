@@ -31,7 +31,12 @@ button:active{
   background-color: darkblue;
 }
 
-section .r_all{
+.r_all{
   height: 5px;  color: red;
   box-sizing: border-box; padding: 20px 20px 20px 20px;
+}
+.R_container {
+  display: grid;
+  place-content:  center;
+
 }
