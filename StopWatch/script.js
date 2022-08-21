@@ -52,11 +52,7 @@ buttonReset.onclick = function () {
   for(i = 0 ; i < cnt; i++){
   document.querySelector('.r_all').remove();
   }
-
   cnt = 0;
-
-
-
 }
 
 
@@ -72,10 +68,12 @@ buttonRecode.onclick = function()
     // 모든 레코드를 출력하기위한 코드
 
     var toAdd = document.createElement("div");
-    toAdd.classList.add("r_all")
+    toAdd.classList.add("r_all");
+
+    // <div class = 'r_all'> toAdd.textContent </div>
+
     toAdd.textContent = r_cnt.textContent + ':' + r_appendMin.textContent + ':' + r_appendSec.textContent + ':' + r_appendTens.textContent
     document.querySelector('section').append(toAdd);
-
     }
 
 
